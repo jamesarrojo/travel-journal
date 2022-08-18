@@ -3,3 +3,26 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  background: #F55A5A;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+  height: 55px;
+}
+
+.nav--icon {
+  max-height: 24px;
+}
