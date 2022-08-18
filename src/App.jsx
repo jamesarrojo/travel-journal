@@ -5,12 +5,18 @@ import data from "./data"
 
 export default function App() {
   const cardData = data.map(item => {
-    return <Card {...item} />
+    return <Card 
+              key={item.id} 
+              {...item}
+              // item={item} 
+            />
   })
+
+  console.log(cardData.length)
   return (
     <>
       <Navbar />
-      <section className="card--list">
+      <section className="card-list">
         {cardData}
       </section>
       

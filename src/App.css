@@ -6,6 +6,8 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: #2B283A;
+  font-size: 11px;
 }
 
 nav {
@@ -27,21 +29,57 @@ nav {
   max-height: 24px;
 }
 
-.card--list {
+.card-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 40px;
+  padding: 30px;
+  /* margin: 0 400px; */
 }
 
 .card {
-  width: 470px;
+  /* note: max width lang pala para okay pa din pag lumiit */
+  max-width: 600px;
   display: flex;
   flex: 0 0 auto;
   gap: 20px;
+  border-bottom: 1px solid #F5F5F5;
+  padding: 20px 0;
+}
+
+.card--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card--image {
-  width: 125px;
   border-radius: 5px;
+  object-fit: cover;
+  width: 125px;
+  height: 168px;
+}
+
+.card--location {
+  letter-spacing: 0.17em;
+  margin-bottom: 3px;
+}
+
+.card--title {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 5px 0 15px 0;
+}
+
+.card--date {
+  font-weight: 700;
+}
+
+.card--description {
+  margin: 10px 0;
+}
+
+.gray {
+  color: #918E9B;
+  letter-spacing: 0;
 }
